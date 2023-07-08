@@ -1,1 +1,54 @@
-/* You can add global styles to this file, and also import other style files */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+text {
+    font-size: 16px;
+    font-family: Open Sans, sans-serif;
+}
+
+text.label {
+    font-weight: 600;
+}
+
+text.valueLabel {
+    font-weight: 300;
+    fill: white;
+    display: none;
+}
+
+text.yearText {
+    font-size: 64px;
+    font-weight: 700;
+    opacity: 0.25;
+    fill: white;
+}
+
+.tick text {
+    fill: #777777;
+}
+
+.xAxis .tick:nth-child(2) text {
+    text-anchor: start;
+}
+
+.tick line {
+    shape-rendering: CrispEdges;
+    stroke: #dddddd;
+}
+
+.tick line.origin {
+    stroke: #aaaaaa;
+}
+
+path.domain {
+    display: none;
+}
